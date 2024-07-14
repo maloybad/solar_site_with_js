@@ -1,0 +1,148 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(24, 32, 18, 1);
+}
+
+main {
+    margin: 0;
+    float: none;
+}
+
+a {
+    color: #FFF;
+}
+
+.main_first_sec {
+    background-image: url("../static/background.PNG");
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    height: 1005px;
+    width: auto;
+}
+
+.main_first_sec_h1 {
+    color: white;
+    font-family: arial;
+    font-size: 1500%;
+    margin: 0;
+    margin-left: 45%;
+}
+
+.main_first_sec_h2 {
+    color: white;
+    font-family: 'Segoe Script';
+    src: url("../static/fonts/segoescript.ttf");
+    font-size: 750%;
+    margin: 0;
+    margin-left: 55%;
+}
+
+.main_second_sec {
+    background-color: rgba(24, 32, 18, 1);
+    padding: 8%;
+    height: 600px;
+}
+
+.main_second_sec_text {
+    float: left;
+}
+
+.main_second_sec_img {
+    float: left;
+    vertical-align: middle;
+    margin-left: 25%;
+}
+
+.main_li {
+    color: white;
+    margin-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    margin-left: 10%;
+}
+
+.pyramid_li {
+    color: white;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    margin-left: 10%;
+}
+
+.main_second_sec_text_head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    color: white;
+}
+
+.main_second_sec_img1 {
+    float: none;
+    scale: 2.4;
+    margin-left: 30%;
+    overflow: hidden;
+}
+
+.main_second_sec_img2 {
+    float: none;
+    scale: 2.5;
+    margin-top: 30%;
+}
+
+.main_second_sec_img3 {
+    float: none;
+    scale: 2.5;
+    margin-bottom: 32%;
+    margin-left: 30%;
+}
+
+.main_third_sec {
+    text-align: center;
+    background-color: rgba(24, 32, 18, 1);
+    padding: 10%;
+}
+
+.main_third_sec_text1 {
+    color: white;
+    font-family: Arial;
+    font-size: 200%;
+    text-align: start;
+}
+
+.main_third_sec_head {
+    color: white;
+    font-family: Arial;
+    font-size: 250%;
+}
+
+.main_third_sec_text2 {
+    color: white;
+    font-family: Arial;
+    font-size: 400%;
+}
+
+.main_third_sec_img {
+    size: 300%;
+    width: 100%;
+    height: auto;
+}
+
+.wounder_header {
+    color: white;
+    font-family: arial;
+    font-size: 400%;
+    margin: 3%;
+}
+
+.wounder_text {
+    color: white;
+    font-family: arial;
+    font-size: 200%;
+    margin: 3%;
+}
+
+.wounder_img {
+    width: 100%;
+    height: auto;
+}
