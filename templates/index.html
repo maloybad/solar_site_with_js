@@ -3,96 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="carousel/carousel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Чудеса света</title>
-    <style>
-        .main_second_sec {
-            display: flex;
-            align-items: flex-start;
-        }
-        .main_second_sec_text {
-            flex: 1;
-            margin-right: 20px;
-            position: relative;
-        }
-        .main_second_sec_img {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .main_second_sec_img img {
-            margin-bottom: 10px;
-            max-width: 100%;
-            height: auto;
-        }
-        .slider {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            overflow: hidden;
-            margin-left: 20px;
-        }
-        .slider img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .slider img.active {
-            opacity: 1;
-        }
-        .leaf {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            background: url('leaf.png') no-repeat center center/cover;
-            animation: fall 5s linear infinite;
-        }
-        @keyframes fall {
-            0% {
-                transform: translateY(-100px);
-            }
-            100% {
-                transform: translateY(100vh);
-            }
-        }
-        .game-container {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 250%;
-            background-image: url('imgback.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 20px;
-            position: relative;
-            min-height: 600px;
-        }
-        .game-container button {
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 20px 40px;
-            margin: 10px;
-            cursor: pointer;
-            font-size: 100%;
-        }
-        .pharaoh-image {
-            width: 30%;
-            max-width: 300px;
-            margin: 20px auto;
-            display: block;
-            position: absolute;
-            top: 40%;
-            left: 19%;
-            transform: translateX(-50%);
-        }
-        body {
-            padding-bottom: 50px;
-        }
-    </style>
 </head>
 <body>
     <main>
@@ -104,6 +17,7 @@
                 света
             </h2>
         </div>
+
         <div class="main_second_sec">
             <div class="main_second_sec_text">
                 <p class="main_second_sec_text_head">Какие именно?</p>
@@ -117,12 +31,13 @@
                     <li class="main_li"><a href="The Lighthouse of Alexandria.html">Александрийский маяк</a></li>
                 </ol>
             </div>
-            <div class="slider">
-                <img src="image1.jpg" class="active">
-                <img src="image2.jpg">
-                <img src="image3.jpg">
+            <div class="main_second_sec_img">
+                <img src="../static/second_sec_im1.png" class="main_second_sec_img1">
+                <img src="../static/second_sec_im3.png" class="main_second_sec_img3">
+                <img src="../static/second_sec_im2.png" class="main_second_sec_img2">
             </div>
         </div>
+
         <div class="main_third_sec">
             <p class="main_third_sec_text1">
                 <span class="main_third_sec_head">Семь чудес света</span> – это рукотворные древние сооружения, которые многие тысячелетия поражают людей своими масштабами и искусной архитектурой.
@@ -131,99 +46,50 @@
             <p class="main_third_sec_text2"> Где находились? </p>
             <img src="../static/map.png" class="main_third_sec_img">
         </div>
+
+        <div class="ant-carousel">
+            <div class="ant-carousel-hider">
+                <ul class="ant-carousel-list">
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=dc2d15b4e4bd1c917d80f3bc3a81586119155f17-12652282-images-thumbs&n=13" alt="0">
+                        <p style="color: white;">Пирамида Хеопса</p>
+                    </li>
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=c4482773aa83fe3372a76cf2169d483490136243668a4e5e-5281184-images-thumbs&n=13" alt="1">
+                        <p style="color: white;">Висячие сады Семирамиды</p>
+                    </li>
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=6100fca289a184e94921682101e47d79aeaea36a-9181167-images-thumbs&n=13" alt="2">
+                        <p style="color: white;">Статуя Зевса в Олимпии</p>
+                    </li>
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=24b89dab14c7111047aac3fd74de7803359022e95c165828-11490366-images-thumbs&n=13" alt="3">
+                        <p style="color: white;">Храм Артемиды</p>
+                    </li>
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=3ca01f5731ebc85b0968ba05054bad55eab0e3ae-5368643-images-thumbs&n=13" alt="4">
+                        <p style="color: white;">Мавзолей Мавсола</p>
+                    </li>
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=12dbe6c29ec7e967cc051a8f088acba88601ca95-12422657-images-thumbs&n=13" alt="5">
+                        <p style="color: white;">Статуя Колосса Родосского</p>
+                    </li>
+                    <li class="ant-carousel-element"><img src="https://avatars.mds.yandex.net/i?id=65c1333d443aa1ed44641c2fb80a1db5ea5c981e-12543315-images-thumbs&n=13" alt="6">
+                        <p style="color: white;">Александрийский маяк</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="ant-carousel-arrow-left"></div>
+            <div class="ant-carousel-arrow-right"></div>
+            <div class="ant-carousel-dots"></div>
+        </div>
+
+        <script src="carousel/carousel.js"></script>
+        <script>new Ant()</script>
+
         <div class="game-container">
-            <img src="pharaoh.webp" alt="Фараон" class="pharaoh-image">
+            <img src="../static/pharaoh.webp" alt="Фараон" class="pharaoh-image">
             <h2>Какое ты чудо света?</h2>
             <div id="question"></div>
             <div id="options"></div>
         </div>
+
+        <script src="game.js"></script>
+        <script>askQuestion()</script>
     </main>
-    <script>
-        // Слайдер
-        const slider = document.querySelector('.slider');
-        const sliderImages = document.querySelectorAll('.slider img');
-        let currentIndex = 0;
-
-        slider.addEventListener('mousedown', (event) => {
-            if (event.button === 0) { // ЛКМ
-                currentIndex = (currentIndex > 0) ? currentIndex - 1 : sliderImages.length - 1;
-            } else if (event.button === 2) { // ПКМ
-                currentIndex = (currentIndex < sliderImages.length - 1) ? currentIndex + 1 : 0;
-            }
-            sliderImages.forEach(img => img.classList.remove('active'));
-            sliderImages[currentIndex].classList.add('active');
-        });
-
-        // Анимация падающих листьев
-        function createLeaf() {
-            const leaf = document.createElement('div');
-            leaf.classList.add('leaf');
-            leaf.style.left = `${Math.random() * 100}vw`;
-            document.querySelector('.main_second_sec_text').appendChild(leaf);
-            setTimeout(() => leaf.remove(), 5000);
-        }
-        setInterval(createLeaf, 1000);
-
-        // Игра
-        const wonders = [
-            "Пирамида Хеопса",
-            "Висячие сады Семирамиды",
-            "Статуя Зевса в Олимпии",
-            "Храм Артемиды",
-            "Мавзолей Мавсола",
-            "Статуя Колосса Родосского",
-            "Александрийский маяк"
-        ];
-        let currentWonderIndex = 0;
-        const questions = [
-            "Это чудо света находится в Египте?",
-            "Это чудо света связано с водой?",
-            "Это чудо света связано с богом Зевсом?",
-            "Это чудо света находится в Азии?",
-            "Это чудо света связано с мавзолеем?",
-            "Это чудо света находится на острове Родос?",
-            "Это чудо света связано с маяком?"
-        ];
-        const questionElement = document.getElementById('question');
-        const optionsElement = document.getElementById('options');
-
-        function askQuestion() {
-            if (currentWonderIndex >= wonders.length) {
-                questionElement.textContent = "Я не знаю такого чуда света!";
-                optionsElement.innerHTML = "";
-                return;
-            }
-            questionElement.textContent = questions[currentWonderIndex];
-            optionsElement.innerHTML = `
-                <button onclick="answerQuestion(true)">Да</button>
-                <button onclick="answerQuestion(false)">Нет</button>
-            `;
-        }
-
-        function answerQuestion(answer) {
-            if (answer) {
-                questionElement.textContent = `Это чудо света - ${wonders[currentWonderIndex]}?`;
-                optionsElement.innerHTML = `
-                    <button onclick="confirmWonder(true)">Да</button>
-                    <button onclick="confirmWonder(false)">Нет</button>
-                `;
-            } else {
-                currentWonderIndex++;
-                askQuestion();
-            }
-        }
-
-        function confirmWonder(answer) {
-            if (answer) {
-                questionElement.textContent = `Я угадал! Это чудо света - ${wonders[currentWonderIndex]}!`;
-                optionsElement.innerHTML = "";
-            } else {
-                currentWonderIndex++;
-                askQuestion();
-            }
-        }
-
-        askQuestion();
-    </script>
 </body>
 </html>
